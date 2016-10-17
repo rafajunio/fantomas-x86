@@ -2,7 +2,7 @@
 Efficient Implementation of Fantomas x86
 
 
-Copyright 2016 LG Electronics, All Rights Reserved. The code is licensed persuant to accompanying the GPLv3 free software license.
+Copyright 2016 LG Electronics and University of Campinas, All Rights Reserved. The code is licensed persuant to accompanying the GPLv3 free software license.
 
 The essential codes are in the src folder. In the aux folder has the files to reproduce.
 

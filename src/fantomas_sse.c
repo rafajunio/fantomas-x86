@@ -1,3 +1,11 @@
+/*
+* ======================================================================
+* Copyright 2016 LG Electronics and  University of Campinas, All Rights 
+* Reserved. The code is licensed persuant to accompanying the GPLv3 free
+* software license.
+* ======================================================================
+*/
+
 #include "fantomas.h"
 #include <tmmintrin.h> //SSSE3
 

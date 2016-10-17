@@ -1,3 +1,11 @@
+/*
+* ======================================================================
+* Copyright 2016 LG Electronics and  University of Campinas, All Rights 
+* Reserved. The code is licensed persuant to accompanying the GPLv3 free
+* software license.
+* ======================================================================
+*/
+
 #include "modes.h"
 
 
@@ -21,7 +29,7 @@ void ctr128_raw(uint8_t *io, uint32_t l_io, void (*enc) (uint8_t *, uint8_t *, u
         new_c_32[i] = c_32[i];
     }
     
-    //complet blocks
+    //complete blocks
     for(i=0; i<blocks; i++) {
         enc(out, new_c, k);
         for (j=15, carry=1; carry && j>=0 ; j--) {
@@ -53,7 +61,7 @@ void enc_cbc128_raw(uint8_t *io, uint32_t l_io, void (*enc) (uint8_t *, uint8_t 
       new_iv_32[i] = iv_32[i];
     }
 
-    //complet blocks
+    //complete blocks
     for(i=0; i<blocks; i++) {
         for(j=0; j<4; j++) {
             in_32[j] = io_32[i*4 + j] ^ new_iv_32[j];
@@ -85,7 +93,7 @@ void dec_cbc128_raw(uint8_t *io, uint32_t l_io, void (*dec) (uint8_t *, uint8_t 
       new_iv_32[i] = iv_32[i];
     }
 
-    //complet blocks
+    //complete blocks
     for(i=0; i<blocks; i++) {
         for(j=0; j<4; j++) { //copy block
             in_32[j] = io_32[i*4 + j];

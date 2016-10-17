@@ -1,3 +1,11 @@
+/*
+* ======================================================================
+* Copyright 2016 LG Electronics and  University of Campinas, All Rights 
+* Reserved. The code is licensed persuant to accompanying the GPLv3 free
+* software license.
+* ======================================================================
+*/
+
 #ifndef BENCH_H
 #define BENCH_H
 
